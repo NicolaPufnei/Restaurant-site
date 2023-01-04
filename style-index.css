@@ -54,6 +54,7 @@ img{
     width: 50%;
     margin-inline: auto;
     gap:1rem;
+    max-width: 200px;
 }
 .welcome-wrapper p{
     font-family:'Cabin';

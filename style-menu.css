@@ -24,6 +24,7 @@ body{
 .back_button-title{
     /* border:2px solid magenta; */
     display: flex; 
+    animation-delay: 300ms;
     align-items: center;  
     justify-content: center;
 }
@@ -45,6 +46,7 @@ body{
     font-size:1.1rem;
 }
 .search_bar{
+    animation-delay: 600ms;
     margin-top:2rem;
     border-radius: 10px;
     background-color: white;
@@ -84,6 +86,7 @@ input:hover, input:focus{
     font-size:1.2rem;
 }
 .menu-options-wrapper{
+    animation-delay: 900ms;
     margin-top:2rem;
     /* border:2px solid magenta; */
     display: grid;
@@ -103,4 +106,21 @@ input:hover, input:focus{
 }
 .menu-option img{
     border-radius: 25px;
+    width: 190px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.animation{
+    animation-duration: 900ms;
+    animation-name: fade-in;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-fill-mode: backwards;
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

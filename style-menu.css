@@ -182,7 +182,6 @@ input:hover, input:focus{
     padding:0.5em;
     border-radius: 6px;
     opacity: 0.5;
-    /* margin-left:0.2rem; */
 }
 .pizza-name{
     font-size:1.2rem;

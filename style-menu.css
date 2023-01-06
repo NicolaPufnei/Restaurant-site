@@ -106,7 +106,7 @@ input:hover, input:focus{
 }
 .menu-option img{
     border-radius: 25px;
-    width: 190px;
+    width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
 }

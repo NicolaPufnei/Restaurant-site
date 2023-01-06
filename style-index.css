@@ -16,7 +16,7 @@ body{
     animation:fade-in 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    background:url(background-image2.jpg) center center no-repeat fixed;
+    background:url(photos/background-image2.jpg) center center no-repeat fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }

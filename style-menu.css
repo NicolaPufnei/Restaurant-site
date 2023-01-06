@@ -124,3 +124,66 @@ input:hover, input:focus{
         opacity: 1;
     }
 }
+.pizza-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    margin-top:2rem;
+    animation-delay:900ms;
+    /* border:2px solid magenta; */
+}
+.pizza-option{
+    display: flex;
+    justify-content: space-between;
+    /* border:2px solid magenta; */
+    background-color: rgb(255, 255, 255);
+    padding:1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 12px;
+}
+.price-add_button{
+    display: flex;
+    gap:1rem;
+}
+.pizza-type{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid magenta; */
+    align-items: flex-start;
+    gap:0.4rem;
+}
+.price{
+    display: flex;
+    /* border:2px solid magenta; */
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid magenta; */
+}
+.add-button button{
+    border:3px solid rgba(128, 128, 128, 0.4);
+    background-color: transparent;
+    padding-inline:0.85rem;
+    padding-block:0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.add-button button i{
+    color:rgb(228, 142, 96);
+}
+.gramaj{
+    background-color: rgb(127, 127, 127, 0.5);
+    font-size:0.7rem;
+    padding:0.5em;
+    border-radius: 6px;
+    opacity: 0.5;
+    /* margin-left:0.2rem; */
+}
+.pizza-name{
+    font-size:1.2rem;
+}

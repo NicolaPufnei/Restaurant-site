@@ -196,32 +196,42 @@ input:hover, input:focus{
     background-color: red;
 }
 .pizza-card{
+    overflow: scroll;
     z-index: 99;
     background-color: white;
     position:absolute;
     left:0;
     top:120%;
-    height:100vh;
+    height:85vh;
+    /* width: 1vw; */
     transition: 500ms ease-in-out;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.pizza-card img{
+    object-fit: cover;
+    height: 250px;
 }
 .quatro-stagioni.is-active{
     top:5rem;
     transition: 500ms ease-in-out;
 }
 .shadow-background{
-    z-index:99;
+    z-index:98;
     position: absolute;
     background-color: rgb(0, 0, 0, 0.5);
     width: 100vw;
     height: 100vh;
     top:0;
     opacity: 0;
+    scale:0;
 
     left:0;
     transition:500ms ease-in-out;
 }
 .shadow-background.is-active{
     opacity:1;
+    scale:1;
     transition:500ms ease-in-out;
 }
 .text-card{

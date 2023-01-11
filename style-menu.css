@@ -13,7 +13,6 @@ img{
     width: 100%;
 }
 body{
-    overflow: hidden;
     background-color: rgb(255, 235, 235);
 }
 .menu-wrapper{
@@ -202,7 +201,7 @@ input:hover, input:focus{
     position:absolute;
     left:0;
     top:120%;
-    height:85vh;
+    height:100vh;
     /* width: 1vw; */
     transition: 500ms ease-in-out;
     border-top-left-radius: 40px;

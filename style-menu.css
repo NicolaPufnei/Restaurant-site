@@ -201,7 +201,7 @@ input:hover, input:focus{
     position:absolute;
     left:0;
     top:120%;
-    height:91vh;
+    height:89vh;
     width: 100vw;
     transition: 500ms ease-in-out;
     border-top-left-radius: 40px;
@@ -257,7 +257,7 @@ input:hover, input:focus{
     padding-inline:3rem;
     padding-block:1em;
     border:none;
-    margin-top:3.1rem;
+    margin-top:2rem;
     border-radius: 15px;
     width: 100%;
     transition:500ms ease-in-out;

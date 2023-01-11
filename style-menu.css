@@ -201,8 +201,8 @@ input:hover, input:focus{
     position:absolute;
     left:0;
     top:120%;
-    height:100vh;
-    /* width: 1vw; */
+    height:91vh;
+    width: 100vw;
     transition: 500ms ease-in-out;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -226,23 +226,29 @@ input:hover, input:focus{
     scale:0;
 
     left:0;
-    transition:500ms ease-in-out;
+    transition:opacity 500ms ease-in-out,
+                scale 0ms ease-in-out 500ms;
 }
 .shadow-background.is-active{
-    opacity:1;
     scale:1;
-    transition:500ms ease-in-out;
+    opacity: 1;
+    transition:scale 0ms ease-in-out,
+                opacity 500ms ease-in-out;
 }
 .text-card{
     width: 100%;
     padding:2rem;
-    padding-top:1rem;
+    padding-top:1.5rem;
 }
 .text-card h3{
     margin-bottom: 0.5rem;
 }
 .text-card p{
     margin-bottom: 1.2rem;
+}
+#pret{
+    color:rgb(233, 157, 34);
+    font-size:1.15rem;
 }
 .text-card button{
     background-color: rgb(233, 178, 29);
@@ -251,7 +257,50 @@ input:hover, input:focus{
     padding-inline:3rem;
     padding-block:1em;
     border:none;
-    margin-top:3rem;
+    margin-top:3.1rem;
     border-radius: 15px;
     width: 100%;
+    transition:500ms ease-in-out;
+    cursor:pointer;
+}
+.food-image{
+    /* border:2px solid magenta; */
+    display: flex;
+    position: relative;
+}
+.food-image button{
+    position: absolute;
+    top:1.1rem;
+    right:1.2rem;
+
+    background-color: rgb(0, 0, 0, 0.3);
+    appearance: none;
+    cursor: pointer;
+    border:1px solid white;
+    border-radius: 50%;
+    padding-inline:0.3rem;
+    padding-block:0.2rem;
+}
+.food-image button i{
+    color:white;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.pizza-card-wrapper{
+    z-index: 100;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    scale:0;
+    display: block;
+    transition:opacity 500ms ease-in-out,
+                scale 0ms ease-in-out 500ms;
+}
+.pizza-card-wrapper.is-active{
+    display:block;
+    opacity: 1;
+    scale:1;
+    transition:scale 0ms ease-in-out,
+                opacity 500ms ease-in-out;
 }

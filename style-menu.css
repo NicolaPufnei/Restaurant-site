@@ -188,9 +188,6 @@ input:hover, input:focus{
 .pizza-name{
     font-size:1.2rem;
 }
-#quatrostagioni.is-active{
-    background-color: red;
-}
 #gramaju.is-active{
     background-color: red;
 }
@@ -211,7 +208,7 @@ input:hover, input:focus{
     object-fit: cover;
     height: 250px;
 }
-.quatro-stagioni.is-active{
+.pizza-card.is-active{
     top:5rem;
     transition: 500ms ease-in-out;
 }
@@ -223,17 +220,13 @@ input:hover, input:focus{
     height: 100vh;
     top:0;
     opacity: 0;
-    scale:0;
 
     left:0;
-    transition:opacity 500ms ease-in-out,
-                scale 0ms ease-in-out 500ms;
+    transition:opacity 200ms ease-in-out;
 }
 .shadow-background.is-active{
-    scale:1;
     opacity: 1;
-    transition:scale 0ms ease-in-out,
-                opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out 300ms;
 }
 .text-card{
     width: 100%;
@@ -289,18 +282,17 @@ input:hover, input:focus{
 .pizza-card-wrapper{
     z-index: 100;
     position: absolute;
-    top:0;
+    top:100%;
     left:0;
-    opacity:0;
     scale:0;
     display: block;
-    transition:opacity 500ms ease-in-out,
-                scale 0ms ease-in-out 500ms;
+    transition:top 500ms ease-in-out 100ms,
+                scale 0ms ease-in-out 600ms;
 }
 .pizza-card-wrapper.is-active{
     display:block;
-    opacity: 1;
+    top:0;
     scale:1;
     transition:scale 0ms ease-in-out,
-                opacity 500ms ease-in-out;
+                top 500ms ease-in-out;
 }

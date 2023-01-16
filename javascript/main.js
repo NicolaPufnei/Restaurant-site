@@ -25,7 +25,7 @@ document.getElementById('shadow-background-3').addEventListener("click" , functi
     document.querySelector(".quatro-formagi-card").classList.remove("is-active");
    document.getElementById("shadow-background-3").classList.remove("is-active");
 });
-document.getElementById('close-button').addEventListener("click" , function() {
+document.getElementById('close-button-1').addEventListener("click" , function() {
     document.getElementById("pizza-card-wrapper").classList.remove("is-active");
     document.querySelector(".quatro-stagioni").classList.remove("is-active");
     document.querySelector(".mamamia").classList.remove("is-active");
